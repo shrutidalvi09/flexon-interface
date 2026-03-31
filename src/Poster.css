@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+:root {
+    --carbon: #0f172a;
+    --safety-orange: #f97316;
+    --ice-white: #ffffff;
+    --subtle-gray: #f1f5f9;
+    --border-gray: #e2e8f0;
+}
+
+.poster-outer-wrapper {
+    background: #020617;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.academic-sheet {
+    width: 1200px;
+    background: var(--ice-white);
+    color: var(--carbon);
+    position: relative;
+    padding: 0;
+    box-shadow: 0 100px 150px -50px rgba(0,0,0,0.7);
+}
+
+/* HIGH-END HEADER */
+.poster-top-header {
+    padding: 80px 80px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.institutional-branding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.college-logo, .college-logo-placeholder {
+    height: 70px;
+    width: auto;
+}
+
+.college-logo-placeholder {
+    background: var(--subtle-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 10px;
+    color: #cbd5e1;
+    border: 1px dashed var(--border-gray);
+    padding: 10px;
+}
+
+.college-name-box { text-align: center; }
+
+.inst-main-title {
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    letter-spacing: -0.5px;
+    margin: 5px 0 0;
+}
+
+.trust-micro-text {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--safety-orange);
+    letter-spacing: 2px;
+}
+
+.header-divider {
+    height: 1px;
+    background: var(--border-gray);
+    margin: 30px 0;
+}
+
+.project-identity {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.meta-tags {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.tag-group, .tag-team {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    background: var(--carbon);
+    color: white;
+}
+
+.hero-title {
+    font-size: 120px;
+    font-weight: 700;
+    letter-spacing: -8px;
+    line-height: 0.8;
+    margin: 0;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    letter-spacing: 6px;
+    font-weight: 300;
+    color: var(--safety-orange);
+    margin-top: 15px;
+}
+
+/* PERSONNEL */
+.personnel-data-bar {
+    background: var(--carbon);
+    color: white;
+    padding: 25px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.data-label {
+    display: block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: #64748b;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.names { font-size: 14px; font-weight: 500; margin: 0; }
+
+/* GRID CONTENT */
+.research-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.8fr 1fr;
+    gap: 60px;
+    padding: 80px;
+}
+
+.grid-label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-left: 4px solid var(--safety-orange);
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+.grid-label.accent { background: var(--carbon); color: white; padding: 8px 15px; border-left: none; }
+
+.content-block p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #334155;
+    text-align: justify;
+}
+
+/* HARDWARE LIST */
+.spec-list { list-style: none; padding: 0; }
+.spec-list li {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-gray);
+    display: flex;
+    gap: 15px;
+}
+.spec-id { color: var(--safety-orange); font-weight: 700; }
+
+/* QUOTE */
+.safety-quote {
+    margin-top: 40px;
+    padding: 30px;
+    background: var(--subtle-gray);
+    border-radius: 4px;
+}
+.hinton-quote { font-style: italic; font-size: 16px; border: none; padding: 0; color: var(--carbon); }
+.quote-cite { display: block; margin-top: 15px; font-size: 11px; font-weight: 700; color: var(--safety-orange); }
+
+/* VISUALS */
+.img-placeholder {
+    background: var(--subtle-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    font-weight: 700;
+    font-size: 12px;
+    border: 1px solid var(--border-gray);
+}
+.hero-visual-frame .img-placeholder { height: 480px; }
+.sub-visual .img-placeholder { height: 200px; }
+
+.fig-tag {
+    display: block;
+    margin-top: 15px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.secondary-visuals { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+
+/* UTIL TAGS */
+.util-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.util-tag {
+    font-size: 11px;
+    font-weight: 700;
+    border: 1px solid var(--carbon);
+    padding: 6px 12px;
+}
+
+.scientific-footer {
+    margin-top: 60px;
+    text-align: center;
+    border-top: 1px solid var(--border-gray);
+    padding-top: 40px;
+}
+.footer-line { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #94a3b8; }
+.acknowledgment { font-size: 32px; letter-spacing: 12px; opacity: 0.1; margin: 10px 0 0; }
+
+@media print {
+    .poster-outer-wrapper { padding: 0; }
+    .academic-sheet { box-shadow: none; border: 1px solid #eee; }
+}
